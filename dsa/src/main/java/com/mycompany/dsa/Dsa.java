@@ -7,6 +7,9 @@ import com.mycompany.dsa.PatternPractice;
 import com.mycompany.dsa.Recursion;
 import com.mycompany.dsa.MethodAndFunction;
 import com.mycompany.dsa.Backtracking;
+import com.mycompany.dsa.Sorting;
+import com.mycompany.dsa.Strings;
+import com.mycompany.dsa.Oop;
 
 /**
  *
@@ -41,7 +44,18 @@ public class Dsa {
         Backtracking backtracking = new Backtracking();
 //        backtracking.callFun();
         ArrayPart arrayPart = new ArrayPart();
-        arrayPart.callFun();
+//        arrayPart.callFun();
+        Sorting sorting = new Sorting();
+        sorting.callFun();
+
+        TwoDArray twoDArray = new TwoDArray();
+//        twoDArray.call();
+        Strings str = new Strings();
+//        str.call();
+        BitManipulation bitManipulation = new BitManipulation();
+//        bitManipulation.call();
+        Oop oop = new Oop();
+//        oop.call();
     }
 }
 
