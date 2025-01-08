@@ -10,6 +10,12 @@ import com.mycompany.dsa.Backtracking;
 import com.mycompany.dsa.Sorting;
 import com.mycompany.dsa.Strings;
 import com.mycompany.dsa.Oop;
+import com.mycompany.dsa.ArrayListPractice;
+import com.mycompany.dsa.LinkListPractice;
+import com.mycompany.dsa.StackPractice;
+import com.mycompany.dsa.QueueP;
+import com.mycompany.dsa.GreedyAlgo;
+import com.mycompany.dsa.BinnaryTreeP;
 
 /**
  *
@@ -46,7 +52,7 @@ public class Dsa {
         ArrayPart arrayPart = new ArrayPart();
 //        arrayPart.callFun();
         Sorting sorting = new Sorting();
-        sorting.callFun();
+//        sorting.callFun();
 
         TwoDArray twoDArray = new TwoDArray();
 //        twoDArray.call();
@@ -56,6 +62,18 @@ public class Dsa {
 //        bitManipulation.call();
         Oop oop = new Oop();
 //        oop.call();
+        ArrayListPractice arrayListPractice = new ArrayListPractice();
+//        arrayListPractice.call();
+        LinkListPractice linkList = new LinkListPractice();
+//        linkList.call();
+        StackPractice stackPractice = new StackPractice();
+//        stackPractice.call();
+        QueueP queue = new QueueP();
+//        queue.call();
+        GreedyAlgo greedyAlgo = new GreedyAlgo();
+//        greedyAlgo.call();
+        BinnaryTreeP binaryTree = new BinnaryTreeP();
+        binaryTree.call();
     }
 }
 
