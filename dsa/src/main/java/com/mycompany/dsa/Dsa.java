@@ -16,6 +16,12 @@ import com.mycompany.dsa.StackPractice;
 import com.mycompany.dsa.QueueP;
 import com.mycompany.dsa.GreedyAlgo;
 import com.mycompany.dsa.BinnaryTreeP;
+import com.mycompany.dsa.BST;
+import com.mycompany.dsa.HeapP;
+import com.mycompany.dsa.HashMapImplementation;
+import com.mycompany.dsa.HashP;
+import com.mycompany.dsa.TrieP;
+import com.mycompany.dsa.GraphP;
 
 /**
  *
@@ -73,7 +79,19 @@ public class Dsa {
         GreedyAlgo greedyAlgo = new GreedyAlgo();
 //        greedyAlgo.call();
         BinnaryTreeP binaryTree = new BinnaryTreeP();
-        binaryTree.call();
+//        binaryTree.call();
+        BST bst = new BST();
+//        bst.call();
+        HeapP heapP = new HeapP();
+//        heapP.call();
+        HashMapImplementation hashMapImplementation = new HashMapImplementation();
+//        hashMapImplementation.call();
+        HashP hasmapP = new HashP();
+//        hasmapP.call();
+        TrieP trieP = new TrieP();
+//        trieP.call();
+        GraphP graphP = new GraphP();
+        graphP.call();
     }
 }
 

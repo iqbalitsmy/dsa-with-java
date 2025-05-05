@@ -34,8 +34,12 @@ public class BinnaryTreeP {
 //        binaryTree.topView(root);
 //        binaryTree.kLevel(root, 0, 2);
 //        System.out.println(lca(root, 4, 5).data);
-        System.out.println(lca2(root, 4, 5).data);
-        System.out.println(minDist(root, 4, 6));
+//        System.out.println(lca2(root, 4, 5).data);
+//        System.out.println(minDist(root, 4, 6));
+//        kAncestor(root, 4, 1);
+        transform(root);
+        binaryTree.levelOrder(root);
+//        binaryTree.preOrder(root);
 
     }
 
@@ -379,11 +383,50 @@ public class BinnaryTreeP {
         }
     }
 
+    // minmum distance
     int minDist(Node root, int n1, int n2) {
         Node lca = lca2(root, n1, n2);
         int dist1 = lcaDist(lca, n1);
         int dist2 = lcaDist(lca, n2);
 
         return dist1 + dist2;
+    }
+
+    int kAncestor(Node root, int n, int k) {
+        if (null == root) {
+            return -1;
+        }
+        if (root.data == n) {
+            return 0;
+        }
+
+        int leftDist = kAncestor(root.left, n, k);
+        int rightDist = kAncestor(root.right, n, k);
+
+        if (leftDist == -1 && rightDist == -1) {
+            return -1;
+        }
+        int max = Math.max(leftDist, rightDist);
+
+        if (max + 1 == k) {
+            System.out.println(root.data);
+        }
+        return max + 1;
+    }
+
+    //transform to sum tree
+    int transform(Node root) {
+        if (root == null) {
+            return 0;
+        }
+        int leftChild = transform(root.left);
+        int rightChild = transform(root.right);
+
+        int data = root.data;
+        int newLeft = root.left == null ? 0 : root.left.data;
+        int newRight = root.right == null ? 0 : root.right.data;
+
+        root.data = leftChild + newLeft + rightChild + newRight;
+        return data;
     }
 }
