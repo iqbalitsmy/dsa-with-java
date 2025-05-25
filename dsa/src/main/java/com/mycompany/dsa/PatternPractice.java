@@ -10,7 +10,7 @@ package com.mycompany.dsa;
  */
 //source https://youtu.be/Dr4PpNa7AYo?si=GNNab4JM0Xluh1nJ
 public class PatternPractice {
-
+    
     void solidRectangle(int row, int col) {
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
@@ -19,7 +19,7 @@ public class PatternPractice {
             System.out.println("");
         }
     }
-
+    
     void hollowRectacngle(int row, int col) {
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
@@ -32,7 +32,7 @@ public class PatternPractice {
             System.out.println("");
         }
     }
-
+    
     void halfPyramid(int row) {
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < i; j++) {
@@ -41,7 +41,7 @@ public class PatternPractice {
             System.out.println("");
         }
     }
-
+    
     void invertedHalfPyramid(int row) {
         for (int i = row; i >= 0; i--) {
             for (int j = 0; j < i; j++) {
@@ -50,7 +50,7 @@ public class PatternPractice {
             System.out.println("");
         }
     }
-
+    
     void rotatedHalfPyramid(int row) {
         for (int i = 1; i <= row; i++) {
             for (int j = 1; j <= row; j++) {
@@ -63,7 +63,7 @@ public class PatternPractice {
             System.out.println("");
         }
     }
-
+    
     void halfPyramidNumber(int row) {
         for (int i = 0; i < row; i++) {
             for (int j = 0; j <= i; j++) {
@@ -72,7 +72,7 @@ public class PatternPractice {
             System.out.println("");
         }
     }
-
+    
     void invertedHalfPyramidNumber(int row) {
         for (int i = row; i >= 0; i--) {
             for (int j = 0; j < i; j++) {
@@ -81,7 +81,7 @@ public class PatternPractice {
             System.out.println("");
         }
     }
-
+    
     void floydTriangle(int row) {
         int sum = 1;
         for (int i = 0; i < row; i++) {
@@ -91,7 +91,7 @@ public class PatternPractice {
             System.out.println("");
         }
     }
-
+    
     void zeroOneTriangle(int row) {
         for (int i = 1; i <= row; i++) {
             for (int j = 1; j <= i; j++) {
@@ -104,7 +104,7 @@ public class PatternPractice {
             System.out.println("");
         }
     }
-
+    
     void butterflyPattern(int n) {
         for (int i = 1; i <= n; i++) {
 //            first pyramid
@@ -139,7 +139,7 @@ public class PatternPractice {
             System.out.println("");
         }
     }
-
+    
     void solidRhombus(int n) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i; j++) {
@@ -151,7 +151,7 @@ public class PatternPractice {
             System.out.println("");
         }
     }
-
+    
     void holowRhombus(int n) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i; j++) {
@@ -167,7 +167,7 @@ public class PatternPractice {
             System.out.println("");
         }
     }
-
+    
     void numberPyramid(int n) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n - i; j++) {
@@ -180,7 +180,7 @@ public class PatternPractice {
             System.out.println("");
         }
     }
-
+    
     void palindromicPattern(int n) {
         for (int i = 0; i < n; i++) {
 //            space print
@@ -198,7 +198,7 @@ public class PatternPractice {
             System.out.println("");
         }
     }
-
+    
     void diamondPattern(int n) {
 //        top pyramid
         for (int i = 0; i < n; i++) {
@@ -233,4 +233,28 @@ public class PatternPractice {
             System.out.println("");
         }
     }
+    
+    //leetcode 2091(Own). Removing Minimum and Maximum From Array
+    int minimumDeletions(int[] nums) {  //TC O(n)
+        int maxIdx = 0;
+        int minIdx = 0;
+        
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > nums[maxIdx]) {
+                maxIdx = i;
+            } else if (nums[i] < nums[minIdx]) {
+                minIdx = i;
+            }
+        }
+        
+        int left = Math.min(maxIdx, minIdx);
+        int right = Math.max(maxIdx, minIdx);
+        
+        int removeLeft = right + 1;
+        int removeRight = nums.length - left;
+        int removeBoth = left + 1 + nums.length - right;
+        
+        return Math.min(removeLeft, Math.max(removeRight, removeBoth));
+    }
+    
 }

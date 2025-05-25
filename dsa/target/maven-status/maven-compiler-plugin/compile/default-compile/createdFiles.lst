@@ -5,8 +5,12 @@ com\mycompany\dsa\TrieP$Node.class
 com\mycompany\dsa\BST.class
 com\mycompany\dsa\HeapP$Pair.class
 com\mycompany\dsa\GraphP$Edge.class
+com\mycompany\dsa\GraphP$Disjoint$Edge.class
 com\mycompany\dsa\ArrayPart.class
 com\mycompany\dsa\StackPractice$StackP.class
+com\mycompany\dsa\GraphP$Disjoint.class
+com\mycompany\dsa\GraphP$Pair.class
+com\mycompany\dsa\GraphP$Info.class
 com\mycompany\dsa\HashMapImplementation$HashMap$Node.class
 com\mycompany\dsa\BinnaryTreeP$BinaryTree$DiameterInfo.class
 com\mycompany\dsa\BinnaryTreeP.class
