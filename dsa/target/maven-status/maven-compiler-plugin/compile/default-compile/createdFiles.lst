@@ -26,6 +26,7 @@ com\mycompany\dsa\HeapP.class
 com\mycompany\dsa\StackPractice$Node.class
 com\mycompany\dsa\PatternPractice.class
 com\mycompany\dsa\HeapP$Student.class
+com\mycompany\dsa\DP.class
 com\mycompany\dsa\BinnaryTreeP$BinaryTree.class
 com\mycompany\dsa\BinnaryTreeP$Node.class
 com\mycompany\dsa\HashMapImplementation.class

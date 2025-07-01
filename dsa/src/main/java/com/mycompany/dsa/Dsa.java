@@ -22,6 +22,7 @@ import com.mycompany.dsa.HashMapImplementation;
 import com.mycompany.dsa.HashP;
 import com.mycompany.dsa.TrieP;
 import com.mycompany.dsa.GraphP;
+import com.mycompany.dsa.DP;
 
 /**
  *
@@ -91,7 +92,9 @@ public class Dsa {
         TrieP trieP = new TrieP();
 //        trieP.call();
         GraphP graphP = new GraphP();
-        graphP.call();
+//        graphP.call();
+        DP dp = new DP();
+        dp.call();
     }
 }
 

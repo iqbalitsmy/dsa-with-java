@@ -82,8 +82,8 @@ public class GreedyAlgo {
         System.out.println("Max Activity:" + maxAct);
         System.out.println(ans);
     }
-//  fractional knapsak
-
+    
+    //  fractional knapsak
     int knapsack(int val[], int weight[], int w) {
         double ratio[][] = new double[val.length][2];
         // 0th column -> idx, 1th column -> ratio

@@ -254,7 +254,7 @@ public class PatternPractice {
         int removeRight = nums.length - left;
         int removeBoth = left + 1 + nums.length - right;
         
-        return Math.min(removeLeft, Math.max(removeRight, removeBoth));
+        return Math.min(removeLeft, Math.min(removeRight, removeBoth));
     }
     
 }
