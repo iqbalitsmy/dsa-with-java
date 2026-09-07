@@ -94,7 +94,9 @@ public class Dsa {
         GraphP graphP = new GraphP();
 //        graphP.call();
         DP dp = new DP();
-        dp.call();
+//        dp.call();
+        Revision revision = new Revision();
+        revision.call();
     }
 }
 
