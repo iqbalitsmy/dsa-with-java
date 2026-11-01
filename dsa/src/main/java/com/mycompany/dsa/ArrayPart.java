@@ -114,9 +114,9 @@ public class ArrayPart {
             int currnSum = 0;
             for (int j = i; j < arr.length; j++) {
                 currnSum = (i == 0) ? prefix[j] : prefix[j] - prefix[i - 1];
-            }
-            if (maxSum < currnSum) {
+                if (maxSum < currnSum) {
                 maxSum = currnSum;
+                }
             }
         }
         System.out.println(maxSum);
